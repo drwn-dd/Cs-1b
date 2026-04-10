@@ -2,57 +2,37 @@
 <html>
 <head>
 <title>Dashboard</title>
-
 <link rel="stylesheet" href="css/style.css">
 <script src="js/script.js"></script>
 </head>
 
-<body>
+<body onload="updateDashboard()">
 
-<!-- YOUR ORIGINAL NAV -->
 <div class="nav">
   <a href="index.html">Home</a>
   <a href="dashboard.html">Dashboard</a>
-  <a href="quiz-upload.html">Quiz Upload</a>
-  <a href="lab-upload.html">Lab Upload</a>
-  <a href="exam-upload.html">Exam Upload</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="lab.html">Lab</a>
+  <a href="exam.html">Exam</a>
 </div>
 
 <div class="container">
 
   <h1>Dashboard</h1>
 
-  <!-- SIMPLE YOUR-STYLE CARDS -->
   <div class="card">
-    <h2 id="quizCount">0</h2>
-    <p>Quizzes Uploaded</p>
+    Quizzes: <span id="quizCount">0</span>
   </div>
 
   <div class="card">
-    <h2 id="labCount">0</h2>
-    <p>Labs Uploaded</p>
+    Labs: <span id="labCount">0</span>
   </div>
 
   <div class="card">
-    <h2 id="examCount">0</h2>
-    <p>Exams Uploaded</p>
-  </div>
-
-  <br>
-
-  <!-- LAB LIST (your simple format) -->
-  <div class="card">
-    <h3>Lab Activities</h3>
-    <ul id="labList"></ul>
+    Exams: <span id="examCount">0</span>
   </div>
 
 </div>
-
-<!-- RUN SCRIPT -->
-<script>
-  updateDashboard();
-  displayLabs();
-</script>
 
 </body>
 </html>
